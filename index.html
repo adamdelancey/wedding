@@ -8,73 +8,83 @@
          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" type="text/css"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">   
     <title>de Lancey Wedding!</title>
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+        (function(){
+            emailjs.init("user_scvEXqvGskRGGpE58Sfoi");            
+        });
+        ;
+        </script>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col m12 center">
-                <h1>Emelie & Adam's Wedding - Save the Date!</h1>
-                <h3>
-                    We're getting married and would love you to be there. 
-                </h3>
-                
+                <h1>Emelie & Adam's Wedding<br>19-21 August, 2022</h1>                
+                <h3>Save the Date!</h3>
             </div>            
         </div>
     </div>
     <div class="container ">
         <div class="row">
-            <div class="col m8 offset-m2 center text-container">
+            <div class="col m10 offset-m1 center text-container">
                 <h5>
-                    We have booked <a href="https://aspaherrgard.se/">Aspa Herrgård</a> for the whole weekend, 19th-21st 
-                    August 2022, and are already in the process of arranging a fun-filled weekend of food, drink and games. The estate is around a 3-hour drive west of Stockholm
-                    and we will arrange bus transfers both ways for those who need it, and accommodation is available to all guests on site. 
+                    We have booked <a href="https://aspaherrgard.se/" target="_blank">Aspa Herrgård</a> for the whole weekend, 19th-21st 
+                    August 2022. We are already in the process of arranging a fun-filled weekend of food, drink and games and would love you to join!
                     <br>
                     <br>
                     For now, we are only asking that you save the date, and fill in a form with your name, email address and postal address so that we can update you once we have 
                     all of the details in place.
                     <br>
                     <br>
+                </h5>
                     <button data-target="modal1" class="btn modal-trigger">Form!</button>
                     <!-- Modal Structure -->
                     <div id="modal1" class="modal">
-                        <div class="modal-content">
-                            <form><input type="text"><input type="submit" value="Submit"></form>
+                        <form onsubmit="return sendMail(this);" id="myForm">
+                        <div class="modal-content">                            
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="name" type="text" class="validate">
+                                    <input id="name" type="text" class="validate" name="name" required>
                                     <label for="name">Name(s)</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email">Email Address</label>
+                                    <input id="emailaddress" type="email" class="validate" name="emailaddress" required>
+                                    <label for="emailaddress">Email Address</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="post" type="text" class="validate">
-                                    <label for="post">Postal Address</label>
+                                    <input id="address" type="text" class="validate" name="address" required>
+                                    <label for="address">Postal Address</label>
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-footer center">
-                            <a href="#!" class="modal-close  btn">Submit</a>
+                        <div class="center">              
+                            <button type="submit" class="btn center">Submit</button>
                         </div>
+                        </form>
                     </div>
-                </h5>
+                
             </div>
         </div>
     </div>
     
 <!-- EmailJS scripts -->
-      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-      <script> (function(){emailjs.init("user_scvEXqvGskRGGpE58Sfoi");   })();</script> 
+     
+
+
+
       <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <!-- My scripts -->
-      <script src="assets/script.js"></script> 
+      <script src="assets/script.js"></script>
+      <script src="assets/sendemail.js"></script> 
 </body>
 </html>

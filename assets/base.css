@@ -1,6 +1,5 @@
 body {
-	font-family: 'Dancing Script', cursive;
-	height: 100vh;
+font-family: 'Raleway', sans-serif;	height: 100vh;
 	background-image: url(../background.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
@@ -12,6 +11,10 @@ body {
 }
 
 .text-container{
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.7);
     border-radius: 3%;
+}
+
+.modal-close{
+    margin-bottom: 15px;
 }
