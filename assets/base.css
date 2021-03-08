@@ -1,0 +1,17 @@
+body {
+	font-family: 'Dancing Script', cursive;
+	height: 100vh;
+	background-image: url(../background.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	color: black;
+}
+
+.text-container{
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 3%;
+}
