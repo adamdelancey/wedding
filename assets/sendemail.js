@@ -4,7 +4,7 @@
         "from_name": contactForm.name.value,        
         "from_email": contactForm.emailaddress.value,
         "from_address": contactForm.address.value,        
-};
+    };
         
     emailjs.send('adamemeliewedding', 'wedding_template', templateParams, "user_scvEXqvGskRGGpE58Sfoi")
     .then(function(response) {
