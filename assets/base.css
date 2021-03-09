@@ -31,4 +31,10 @@ font-family: 'Raleway', sans-serif;	height: 100vh;
     h5{
         font-size: 1.4rem !important;
     }
+    .title-container{
+        padding: 0;
+    }
+    .row{
+        margin-bottom: 0 !important;
+    }
 }
