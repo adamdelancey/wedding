@@ -16,7 +16,7 @@ font-family: 'Raleway', sans-serif;	height: 100vh;
 }
 
 .home-body{
-background-image: url(../africa.jpg);
+background-image: url(../africa2.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -62,6 +62,15 @@ background-image: url(../africa.jpg);
     .schedule-container-mobile{
         display: block !important;
     }
+    .home-body{
+        background-image: url(../background.jpg);
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
 }
 
 .schedule-container-desktop img{
@@ -80,3 +89,6 @@ background-image: url(../africa.jpg);
     display: none;
 }
 
+.blue{
+    margin-bottom: 0;
+}
