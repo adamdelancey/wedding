@@ -11,8 +11,12 @@ font-family: 'Raleway', sans-serif;	height: 100vh;
 	color: black;
 }
 
+.bold{
+    font-weight: bold;
+}
+
 .home-body{
-background-image: url(../background.jpg);
+background-image: url(../africa.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
